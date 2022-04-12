@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  mysqldb:
+    image: mysql
+    container_name: mysqldb
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=malonekeep
+    ports:
+      - "3306:3306"
